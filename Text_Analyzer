@@ -1,0 +1,23 @@
+print("===TEXT ANALYZER===")
+text=input("Enter a sentence:")
+characters=len(text)
+words=text.split()
+word_count=len(words)
+
+vowels=0
+spaces=0
+
+for character in text:
+       if character.lower() in"aeiou":
+           vowels=vowels+1
+       if character==" " :
+           spaces=spaces+1
+print("===RESULT===")
+print(f" original text:{text}")
+print(f"total characters:{characters}")
+print(f"total words:{word_count}")
+print(f"total vowels:{vowels}")
+print(f"total spaces:{spaces}")
+print(f"uppercase:{text.upper()}")
+print(f"lowecase:{text.lower()}")
+print(f"Reverse text:{text[: :-1]}")
